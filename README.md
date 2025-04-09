@@ -17,3 +17,10 @@ This is just basic expense tracker project with Laravel Filament
 1. Do another migrations table again for expenses cause im dumb enough to delete last expenses table but this time remember to add total_price in.
 2. Update Expense model
 3. Added $data['total_price'] = $data['amount'] * $data['price']; inside mutateFormDataBeforeCreate function
+
+9/4/2025 9:25 PM
+1. public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->whereMonth('created_at', Carbon::now()->month)->whereYear('created_at', Carbon::now()->year);
+    }
+2. 
