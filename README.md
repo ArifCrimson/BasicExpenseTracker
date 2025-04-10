@@ -23,4 +23,5 @@ This is just basic expense tracker project with Laravel Filament
     {
         return parent::getEloquentQuery()->whereMonth('created_at', Carbon::now()->month)->whereYear('created_at', Carbon::now()->year);
     }
+Inside ExpenseResource.php
 2. 
